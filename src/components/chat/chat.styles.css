@@ -1,0 +1,40 @@
+.borders{
+    border:1px solid gray;
+    border-radius:80%;
+    position:fixed;
+    bottom:3%;
+    height:80px;
+    width:80px;
+    right:2%;
+  
+}
+.shadowBox{
+    background-image: linear-gradient(white,gray,white);
+    height:5px;
+    width:36px;
+    border-radius: 200px;
+    opacity:0.2;
+    visibility: hidden;
+    transform: scale(2);
+}
+.shad{
+    position:fixed;
+    bottom:2.2%;
+    right:3.6%;
+}
+.set{
+    height:75px;
+    border-radius:45%;
+    transform: scale(0.8);
+    padding:3%;
+}
+.set:hover{
+    transform:scale(0.95);
+    transition:transform 0.65s;
+}
+
+.borders:hover{
+   bottom:4%;
+   transition: bottom 0.5s;
+  
+}

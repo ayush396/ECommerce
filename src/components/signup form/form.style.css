@@ -1,0 +1,106 @@
+.but{
+    background-color: black;
+    color:white;
+    width:150px;
+    padding:5%;
+    border:none;
+    font-size: 1.1rem;
+    display:inline-block;
+    margin-top:7%;
+
+}
+.but:hover{
+    background-color: white;
+    color:black;
+    cursor:pointer;
+    border:2px solid;
+    width:150px;
+    cursor:pointer;
+}
+.but1{
+    background-color: black;
+    color:white;
+    width:150px;
+    padding:5%;
+    border:none;
+    font-size: 1.1rem;
+    display:inline-block;
+    margin-top:7%;
+
+}
+.but1:hover{
+    background-color: white;
+    color:black;
+    cursor:pointer;
+    border:2px solid;
+    width:150px;
+   
+}
+input{
+    position :relative;
+    border: none;
+    border-bottom: 1px solid;
+    cursor: pointer;
+    width:100%;
+    font-size: 1.15rem;
+    padding:2%;
+    margin-bottom: 8%;
+}
+form{
+    margin-top:15%;
+}
+input:focus{
+    outline:none;
+}
+input[type='password']{
+    letter-spacing: 10px;
+ 
+}
+.inverted{
+background-color: cornflowerblue;
+color:white;
+padding:5%;
+width:200px;
+position:absolute;
+display:inline-block;
+margin-left:50%;
+margin-top:-15%;
+border:none;
+font-size: 1.1rem;
+}
+.inverted:hover{
+    background-color: white;
+color:cornflowerblue;
+    border:2px solid cornflowerblue;
+    width:200px;
+    cursor:pointer;
+}
+input:focus ~ label,input:valid ~ label{
+    font-size: 0.8rem;
+    margin-top:-4.9%;
+    transition: font-size  0.5s;
+    transition: margin-top  0.5s;
+}
+.labelAdjust{
+    margin-top:-15%;
+}
+input:focus ~ .labelAdjust,input:valid ~.labelAdjust{
+    font-size: 0.8rem;
+    margin-top:-21%;
+    transition: font-size  0.5s;
+    transition: margin-top  0.5s;
+}
+label{
+    position:absolute;
+    cursor: pointer;
+    margin-top: -3.8%;
+    font-size: 1.08rem;
+}
+.form-heading{
+    font-size: 2.1rem;
+}
+.sub-heading{
+    font-size: 1.3rem;
+    margin-top: -8%;
+    font-weight: lighter;
+}

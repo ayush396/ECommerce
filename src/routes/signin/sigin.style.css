@@ -1,0 +1,12 @@
+.boxlayout{
+    display: inline-block;
+    margin-left: 10%;
+    position:absolute;
+    margin-top: 2%;
+}
+.boxlayout1{
+
+    display: inline-block;
+    margin-left: 55%;
+    margin-top: 2%;
+}

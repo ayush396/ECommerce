@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Open+Sans&display=swap');
+
+.pics{
+    height:90px;
+    width:90px;
+}
+.nav{
+    background-color: lightgray;
+    padding: 1% 3.5% 1% ;
+
+}
+.heading{
+    display: inline-block;
+    font-family: 'Abril Fatface', cursive;
+    font-size:2.5rem;
+    font-weight: lighter;
+    position:absolute;
+    margin-top:2%;
+}
+.signin{
+    text-decoration: none;
+    position:absolute;
+    right:10%;
+    color:black;
+    margin-top:2%;
+    display: inline-block;
+}
+.contact{
+    text-decoration: none;
+    color:black;
+    position:absolute;
+    right:16%;
+    margin-top:2%;
+    display: inline-block;
+}
+
+.shop{
+    text-decoration: none;
+    position:absolute;
+    color:black;
+    right:23%;
+    margin-top:2%;
+    display: inline-block;
+}
+.shop:hover{
+    cursor:pointer;
+}
+.contact:hover{
+    cursor:pointer;
+}
+.signin:hover{
+    cursor:pointer;
+}
+.underline{
+    background-image: linear-gradient(white,white);
+    width:0%;
+    height:6px;
+    
+}
+.shop:hover .underline{
+    width:100%;
+    transition: width 0.5s;
+}
+.contact:hover .underline{
+    width:100%;
+    transition: width 0.5s;
+}
+.signin:hover .underline{
+    width:100%;
+    transition: width 0.5s;
+}
