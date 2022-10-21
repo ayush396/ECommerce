@@ -1,0 +1,47 @@
+.carts{
+    height:40px;
+    width:40px;
+    cursor: pointer;
+}
+.carts:hover{
+    transform: scale(1.08);
+    transition: transform 0.5s;
+}
+.carts:hover  p{
+    color:rgb(64, 59, 164);
+    transform: scale(1.05);
+}
+.count{
+    font-size: 1rem;
+    position:absolute;
+    margin-top: -29px;
+    text-align: center;
+    padding:2% 25% 2% 29%;
+}
+.cart-dropdown{
+    background-color: white;
+    height: 370px;
+    width:280px;
+    border:1.6px solid;
+    position:absolute;
+    z-index:1;
+    right:2.8%;
+   
+}
+.ext{
+    position: absolute;
+    bottom: 4%;
+    margin-left: 21%;
+   
+}
+.box{
+    max-height: 280px;
+    overflow-y: auto;
+    margin-top: 5%;
+}
+.empty{
+    margin-top: 40%;
+    margin-left: 20%;
+    font-weight: lighter;
+    font-size: 1.3rem;
+}

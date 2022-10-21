@@ -1,3 +1,4 @@
+import './button.style.css'
 const Buttons = (props) => {
     const designClass = props.design
     const Value = props.valueName

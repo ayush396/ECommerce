@@ -1,0 +1,80 @@
+.container{
+    padding:5% 10% 5% 10%;
+}
+.category{
+    margin-top:1.5%;
+}
+.adjust{
+    display: inline-block;
+    position: relative;
+    margin-left: 12%;
+    font-size: 1.1rem;
+}
+.picAdjust{
+    width:120px;
+   
+}
+.item1{
+    display: inline-block;
+    margin-left: 9%;
+    /* border:1px solid; */
+}
+.item {
+    display: inline-block;
+    position: absolute;
+    width:60%;
+    margin-top: 2%;
+    /* border:1px solid; */
+}
+.item p{
+    display: inline-block;
+}
+.adjustQuantity{
+    display: inline-block;
+    margin-left: 13%;
+    font-size: 1.4rem;
+    font-weight: lighter;
+    width:6.7%
+}
+.desBut{
+    border:none;
+    background-color: white;
+    font-weight:900;
+    
+    
+}
+.desBut:hover{
+    cursor: pointer;
+}
+.adjustName{
+   
+    font-size: 1.4rem;
+    margin-left: 12%;
+    font-weight: lighter;
+    
+}
+.adjustPrice{
+    margin-left: 17.5%;
+    font-weight: lighter;
+    font-size: 1.4rem;
+
+}
+.remove{
+    display: inline-block;
+    margin-left: 18.5%;
+    
+    
+}
+.remBut{
+    color:red;
+    font-size: 1.23rem;
+}
+.quant{
+    margin-left: 4.5%;
+    margin-right: 4.5%;
+}
+.total{
+    position:absolute;
+    right:19%;
+    margin-top: -1%;
+}

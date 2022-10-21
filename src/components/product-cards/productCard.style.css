@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+.cont{
+    
+    display: inline-block;
+    margin-left: 2%;
+    margin-top: 2%;
+
+}
+.add{
+    position: absolute;
+    margin-top: -30%;
+    margin-left:18%;
+    visibility: hidden;
+    
+}
+.product-card{
+    border-radius: 5px;
+    border:0px solid;
+
+    position: relative;
+   
+
+   
+    overflow:hidden;
+}
+.headText{
+    margin-left: 5%;
+    margin-top:4%;
+    font-size: 2.3rem;
+    font-weight: lighter;
+
+}
+.but2{
+    background-color: white;
+    color:black;
+    width:150px;
+    opacity:0.95;
+    padding:5%;
+    border:none;
+    font-size: 1.1rem;
+    display:inline-block;
+    margin-top:7%;
+    border-radius:4px;
+}
+.but2:hover{
+    cursor:pointer;
+    opacity:1;
+    background-color: lightgray;
+    color:black;
+ 
+}
+.shopImg{
+   height:340px;
+   width:250px;   
+   z-index: -1;
+}
+.shopImg:hover{
+    opacity:0.8;
+    cursor: pointer;
+    transform: scale(1.06);
+    transition: transform 0.7s;
+    z-index: -1;
+}
+/* .shopImg:hover ~ .add{
+    visibility: visible;  
+}
+*/
+.product-name{
+    color:rgb(74, 73, 73);
+    display: inline-block;
+    margin-left: 5%;
+    font-size: 1.1rem;
+    margin-top: 2%;
+}
+.product-price{
+    color:rgb(74, 73, 73);
+    display: inline-block;
+    margin-left:45%;
+    font-size: 1.1rem;
+    position: absolute;
+    margin-top: 2%;
+}
+.cartImg{
+    width:80px;
+    margin-left:7%;
+    
+}
+
+.pos-details{
+    display: inline-block;
+    margin-left: 7%;
+    position: relative;
+    bottom:22px;
+}

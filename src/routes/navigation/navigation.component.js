@@ -4,11 +4,14 @@ import './navigation.style.css'
 import {useContext} from 'react'
 import { UserContext } from '../../contexts/user.context'
 import { UserSignOut } from '../../utils/firebase/firebase.utils'
+import Cart from '../../components/shopping-cart/cart.component'
+import DropDown from '../../components/shopping-cart/dropdown.component'
+import { CartContext } from '../../contexts/cartState.context'
 
 const Navigation = ()=>{
     const {currentUser} = useContext(UserContext)
     console.log(currentUser);
-    
+    const {isOpened} =useContext(CartContext)
 
     return (
         <div>
@@ -34,7 +37,11 @@ const Navigation = ()=>{
                     </Link>)
                     
                 }
-                
+                <div className='cart'>
+                    <Cart/>
+                </div>
+                {isOpened && <DropDown/>}
+                             
                 
             </div>
             <Outlet/>

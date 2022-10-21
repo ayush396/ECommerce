@@ -2,7 +2,7 @@ import './form.style.css'
 import {useState} from 'react'
 import { handleEmailPass } from '../../utils/firebase/firebase.utils';
 import Buttons from './button.component';
-
+import './button.style.css'
 const SignInForm = () => {
     const records = {
         names:'',
@@ -18,6 +18,9 @@ const handleChange = (event) =>{
     setRecord({...record,[displayName]:displayValue})
     
 } 
+const resetFormFiels = () =>{
+    setRecord(records);
+}
 const handleSubmit = async(event) => {
     console.log(record);
     if (record.cnfPass !== record.passs){
@@ -27,8 +30,10 @@ const handleSubmit = async(event) => {
     console.log(record.emails);
     console.log(record.passs);
     try{
+        resetFormFiels()
         const response1 = await handleEmailPass(record.emails,record.passs)
         console.log(response1);
+
     }
     catch(err){
         console.log("Error crating the user ",err.message);
@@ -43,22 +48,22 @@ const handleSubmit = async(event) => {
             <p className='sub-heading'>Sign Up with Email & Password</p>
             <form>
                <div>
-                    <input id="hi1" type="text" name="names"  required onChange={handleChange}></input><br/>
+                    <input id="hi1" type="text" name="names" value={record.names}  required onChange={handleChange}></input><br/>
                     <label for="hi1">Enter Name</label> 
                </div>
                
                 <div>
-                    <input id="hi2" type="email" name="emails"  required  onChange={handleChange}></input><br/>
+                    <input id="hi2" type="email" name="emails" value={record.emails}  required  onChange={handleChange}></input><br/>
                     <label for="hi2">Enter Email</label>
                </div>
                
                 <div>
-                    <input id="hi3" type="password" name="passs"  onChange={handleChange} required></input><br/>
+                    <input id="hi3" type="password" name="passs" value={record.passs}  onChange={handleChange} required></input><br/>
                     <label for="hi3">Create Password</label>
                </div>
                 
                 <div>
-                    <input id="hi4" type="password" name="cnfPass" onChange={handleChange} required ></input><br/>
+                    <input id="hi4" type="password" name="cnfPass" value={record.cnfPass} onChange={handleChange} required ></input><br/>
                     <label for="hi4">Confirm Password</label>
                </div>
                 

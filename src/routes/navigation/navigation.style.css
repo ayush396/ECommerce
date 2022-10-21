@@ -20,7 +20,7 @@
 .signin{
     text-decoration: none;
     position:absolute;
-    right:10%;
+    right:16%;
     color:black;
     margin-top:2%;
     display: inline-block;
@@ -29,16 +29,21 @@
     text-decoration: none;
     color:black;
     position:absolute;
-    right:16%;
+    right:22%;
     margin-top:2%;
     display: inline-block;
 }
-
+.cart{
+    position:absolute;
+    display: inline-block;
+    right:10%;
+    margin-top:2%;
+}
 .shop{
     text-decoration: none;
     position:absolute;
     color:black;
-    right:23%;
+    right:29.3%;
     margin-top:2%;
     display: inline-block;
 }
